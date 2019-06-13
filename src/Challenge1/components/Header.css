@@ -1,0 +1,41 @@
+.Header {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 26vh;
+  background: #25201a;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.Title {
+  margin: 0;
+  color: #fff;
+  opacity: 0.8;
+  padding: 0;
+}
+
+.Title>p {
+  font-weight: 500;
+}
+
+.Images {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Images>img {
+  max-width: 140px;
+  max-height: 140px;
+  padding: 1px;
+  padding-top: 0px;
+}
+
+@media(max-width: 688px) {
+  .Header {
+
+  }
+  .Images {
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+.Card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 12px;
+  max-width: 250px;
+  margin-bottom: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.8s fade;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    margin-top: 0.8rem;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.ChipSmall {
+  transform: scale(0.9)
+}
+
+.CardHeader {
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 6px solid #e6e5e6;
+}
+
+.CardImage {
+  height: 30px;
+  width: 30px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.CardTitle {
+  display: block;
+}
+
+.CardBody {
+  padding: 20px;
+  padding-top: 0px;
+  flex-grow: 1;
+}
+
+.CardFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  background-color: #e6e5e6;
+}
+
+.CardFooter>p {
+  padding-right: 20px;
+}
+
+@media(max-width: 688px) {
+  .Card {
+    min-width: 90vw;
+    padding: 0;
+    margin-right: 2px;
+    margin-left: auto;
+  }
+  .CardHeader {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .CardBody>h6 {
+    opacity: 0.7;
+  }
+  .CardFooter {
+    padding: 0.5rem;
+  }
+}
